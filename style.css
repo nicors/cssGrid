@@ -1,0 +1,30 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "header header"
+                         "section aside"
+                         "footer footer";
+    gap: 15px;
+}
+
+header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+section {
+    background-color: blueviolet;
+    grid-area: section;
+}
+
+aside {
+    background-color: burlywood;
+    grid-area: aside;
+}
+
+footer {
+    background-color: chocolate;
+    grid-area: footer;
+}
